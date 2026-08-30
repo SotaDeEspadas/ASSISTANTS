@@ -1,0 +1,790 @@
+/* ==========================================================================
+   CLIENT DETAIL VIEW STYLES
+   ========================================================================== */
+
+.client-detail {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Detail Header */
+.client-detail .detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client-detail .detail-header h1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+}
+
+.client-detail .back-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background: transparent;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  color: #6b7280;
+  cursor: pointer;
+  font-size: 13px;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+}
+
+.client-detail .back-button:hover {
+  background: #f3f4f6;
+  color: #1a1a1a;
+  border-color: #9ca3af;
+}
+
+.client-detail .client-code {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.client-detail .header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.client-detail .header-actions .btn {
+  padding: 10px 16px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Profile Section */
+.client-detail .profile-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Profile Card */
+.client-detail .profile-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.client-detail .profile-header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.client-detail .profile-avatar {
+  width: 80px;
+  height: 80px;
+  background: #00336610;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #003366;
+  flex-shrink: 0;
+}
+
+.client-detail .profile-avatar svg {
+  width: 40px;
+  height: 40px;
+}
+
+.client-detail .profile-info {
+  flex: 1;
+}
+
+.client-detail .profile-info h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 12px 0;
+}
+
+.client-detail .profile-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.client-detail .profile-badges .badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+}
+
+.client-detail .profile-badges ..mifid-badge {
+  background: #00336620;
+  color: #003366;
+}
+
+.client-detail .profile-badges .risk-badge {
+  color: inherit;
+}
+
+.client-detail .profile-details {
+  padding-top: 16px;
+}
+
+.client-detail .detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.client-detail .detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.client-detail .detail-item.full-width {
+  grid-column: 1 / -1;
+}
+
+.client-detail .detail-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.client-detail .detail-label svg {
+  color: #9ca3af;
+  width: 14px;
+  height: 14px;
+}
+
+.client-detail .detail-value {
+  font-size: 13px;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+/* Identification Card */
+.client-detail .identification-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.client-detail .identification-card h3,
+.client-detail .kyc-section h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+}
+
+.client-detail .identification-card h3 {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.client-detail .id-details {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 12px;
+}
+
+.client-detail .id-item,
+.client-detail .kyc-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 12px;
+}
+
+.client-detail .id-label,
+.client-detail .kyc-label {
+  font-size: 11px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.client-detail .id-value,
+.client-detail .kyc-value {
+  font-size: 13px;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.client-detail .id-status,
+.client-detail .kyc-status {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.client-detail .id-days,
+.client-detail .kyc-days {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.client-detail .kyc-section {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.client-detail .kyc-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* Portfolio Card */
+.client-detail .portfolio-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.client-detail .portfolio-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 20px 0;
+}
+
+.client-detail .portfolio-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.client-detail .portfolio-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.client-detail .portfolio-stat:last-child {
+  border-bottom: none;
+}
+
+.client-detail ..stat-label {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.client-detail ..stat-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #003366;
+}
+
+/* Detail Tabs */
+.client-detail .detail-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 8px;
+  overflow-x: auto;
+}
+
+.client-detail .detail-tabs .tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.client-detail .detail-tabs .tab:hover {
+  background: #f3f4f6;
+  color: #1a1a1a;
+}
+
+.client-detail .detail-tabs .tab.active {
+  background: #003366;
+  color: white;
+}
+
+.client-detail .detail-tabs .tab.active svg {
+  color: white;
+}
+
+.client-detail .tab-badge {
+  display: inline-flex;
+  align-items: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 9px;
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+/* Tab Content */
+.client-detail .tab-content {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.client-detail .tab-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 20px 0;
+}
+
+/* Contracts Section */
+.client-detail .contracts-section .contracts-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.client-detail .contracts-section table th,
+.client-detail .contracts-section table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.client-detail .contracts-section table th {
+  background: #f9fafb;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #4b5563;
+  letter-spacing: 0.5px;
+}
+
+.client-detail .contracts-section table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.client-detail .contracts-section table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.client-detail .status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.client-detail .action-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: #003366;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.client-detail .action-link:hover {
+  background: #00336610;
+}
+
+/* Alerts Section */
+.client-detail .alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.client-detail .alert-card {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.client-detail .alert-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-detail .alert-priority,
+.client-detail .alert-status,
+.client-detail .task-priority,
+.client-detail .task-status {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.client-detail .alert-card-body h4,
+.client-detail .task-card-body h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+}
+
+.client-detail .alert-card-body p,
+.client-detail .task-card-body p {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0 0 8px 0;
+}
+
+.client-detail .alert-meta,
+.client-detail .task-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+/* Tasks Section */
+.client-detail .tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.client-detail .task-card {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.client-detail .task-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* KYC Details Section */
+.client-detail .kyc-details-section .kyc-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.client-detail .kyc-details-section table th,
+.client-detail .kyc-details-section table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.client-detail .kyc-details-section table th {
+  background: #f9fafb;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #4b5563;
+  letter-spacing: 0.5px;
+}
+
+.client-detail .kyc-details-section table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.client-detail .kyc-details-section table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.client-detail .verification-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Empty State */
+.client-detail .empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.client-detail .empty-state svg {
+  color: #9ca3af;
+  margin-bottom: 12px;
+}
+
+.client-detail .empty-state p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Error State */
+.client-detail .error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.client-detail .error-state svg {
+  color: #ef4444;
+  margin-bottom: 16px;
+}
+
+.client-detail .error-state h3 {
+  color: #1a1a1a;
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+.client-detail .error-state p {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0 0 20px 0;
+}
+
+.client-detail .error-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Loading State */
+.client-detail .loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.client-detail .loading-state .spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #f3f4f6;
+  border-top-color: #003366;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.client-detail .loading-state p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Error Toast */
+.client-detail .error-toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ef4444;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.client-detail .error-toast .error-close {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.client-detail .error-toast .error-close:hover {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .client-detail .profile-section {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .client-detail .portfolio-card {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 992px) {
+  .client-detail {
+    padding: 16px;
+  }
+
+  .client-detail .profile-section {
+    grid-template-columns: 1fr;
+  }
+
+  .client-detail .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .client-detail .id-details,
+  .client-detail .kyc-details {
+    grid-template-columns: 1fr;
+  }
+
+  .client-detail .detail-tabs {
+    overflow-x: auto;
+  }
+
+  .client-detail .detail-tabs .tab {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .client-detail .detail-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .client-detail .header-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .client-detail .header-actions .btn {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .client-detail .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .client-detail .profile-avatar {
+    width: 64px;
+    height: 64px;
+  }
+
+  .client-detail .profile-avatar svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .client-detail .profile-info h2 {
+    font-size: 18px;
+  }
+
+  .client-detail .profile-badges {
+    justify-content: center;
+  }
+
+  .client-detail .contracts-section table th,
+  .client-detail .contracts-section table td,
+  .client-detail .kyc-details-section table th,
+  .client-detail .kyc-details-section table td {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .client-detail .portfolio-stat {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .client-detail .stat-value {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .client-detail .detail-item.full-width .detail-value {
+    font-size: 12px;
+  }
+
+  .client-detail .alert-card-header,
+  .client-detail .task-card-header {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .client-detail .alert-meta,
+  .client-detail .task-meta {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
