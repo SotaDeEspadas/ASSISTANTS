@@ -1,0 +1,42 @@
+{
+  "routes": [
+    {
+      "route": "/api/*",
+      "allowedRoles": ["anonymous"]
+    },
+    {
+      "route": "/auth/*",
+      "allowedRoles": ["anonymous"]
+    },
+    {
+      "route": "/*",
+      "allowedRoles": ["authenticated"]
+    }
+  ],
+  "auth": {
+    "identityProviders": {
+      "azureActiveDirectory": {
+        "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/bancomediolanum.es/v2.0",
+          "clientId": "${AZURE_AD_CLIENT_ID}",
+          "clientSecret": "${AZURE_AD_CLIENT_SECRET}"
+        },
+        "validation": {
+          "allowedAudiences": ["api://${AZURE_AD_CLIENT_ID}"]
+        }
+      }
+    }
+  },
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/api/*", "/auth/*"]
+  },
+  "responseOverrides": {
+    "401": {
+      "rewrite": "/login"
+    },
+    "403": {
+      "rewrite": "/forbidden"
+    }
+  }
+}
